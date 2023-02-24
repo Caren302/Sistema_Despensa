@@ -1,0 +1,54 @@
+$def with(index)
+<!DOCTYPE html>
+<html lang="es"></html>
+    <head>
+        <title>RCIC</title>
+    </head>
+    <body>
+        <center>    
+        <h1>Consumiendo api's con web.py Y conectando a base de datos con "MySQL Connector.py"</h1>
+                    <h2>By: Roberto CI</h2>
+        
+        <form method="POST">
+            <h2>Agregar oficiales</h2>
+            <label>Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <br>
+            <label>Apellido paterno</label>
+            <input type="text" name="apellido_paterno" id="apellido_paterno">
+            <br>
+            <br>
+            <label>Apellido Materno</label>
+            <input type="text" name="apellido_materno" id="apellido_materno">
+            <br>
+            <br>
+            <label>Cargo</label>
+            <input type="text" name="cargo" id="cargo">
+            <br>
+            <br>
+            <input type="submit" value="Agregar">
+        </form>
+        <h2>Lista de oficiales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                $for fila in index:
+                    <tr>
+                        <td>$fila['nombre']</td>
+                        <td>$fila['apellido_paterno']</td>
+                        <td>$fila['apellido_materno']</td>
+                        <td>$fila['cargo_grado']</td>
+                    
+                    </tr>
+            </tbody>
+        </center>    
+    </body>
+</html>
