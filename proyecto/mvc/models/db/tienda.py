@@ -42,21 +42,21 @@ class Crud_tiendas:
 
         )
         mycursor = mydb.cursor()
-        tiendas="""
+        des="""
        CREATE TABLE Despensa(
        id_despensa integer PRIMARY KEY NOT NULL,
-       productos varchar ,
+       productos varchar(50) ,
        fecha date,
-       precio string,
-       total string   
+       precio int,
+       total int   
         );
         """
 
-        mycursor.execute(tiendas)
+        mycursor.execute(des)
         print(mycursor)    
   
-    tienda()
-    crear_db()
+    #tienda()
+    #crear_db()
     despensa()
 
 #cd proyecto/mvc/models
