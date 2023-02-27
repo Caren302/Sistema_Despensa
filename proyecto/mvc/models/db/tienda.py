@@ -10,7 +10,7 @@ class Db_creador:
         mycursor = mydb.cursor()
         mycursor.execute("CREATE DATABASE el_ajolote_ahorrador")
 
-    def crear_table():
+    def tienda():
         mydb = mysql.connector.connect(
         host="localhost",
         user="root",
@@ -29,10 +29,32 @@ class Db_creador:
         """
 
         mycursor.execute(tiendas)
-        print(mycursor)
+        
+        
+    def despensa():
+        mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="el_ajolote_ahorrador"
 
+        )
+        mycursor = mydb.cursor()
+        tiendas="""
+       CREATE TABLE Despensa(
+       id_despensa integer PRIMARY KEY NOT NULL,
+       productos varchar ,
+       fecha date,
+       precio string,
+       total string   
+        );
+        """
 
-    crear_table()
+        mycursor.execute(tiendas)
+        print(mycursor)    
+  
+    tienda()
     crear_db()
+    despensa()
 
 #cd proyecto/mvc/models
