@@ -1,4 +1,3 @@
-import web
 
 class Index:
     def GET(self):
