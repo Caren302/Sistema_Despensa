@@ -1,6 +1,6 @@
 import mysql.connector
 
-class Crud_tiendas:
+class Db_creador:
     def crear_db():
         mydb = mysql.connector.connect(
         host="localhost",
@@ -8,9 +8,7 @@ class Crud_tiendas:
         password="",
         )
         mycursor = mydb.cursor()
-
         mycursor.execute("CREATE DATABASE el_ajolote_ahorrador")
-        print(mycursor)
 
     def tienda():
         mydb = mysql.connector.connect(
