@@ -41,8 +41,8 @@ class Db_creador:
         )
         mycursor = mydb.cursor()
         des="""
-       CREATE TABLE Despensa(
-       id_despensa integer PRIMARY KEY NOT NULL,
+        CREATE TABLE despensa(
+       id_despensa integer  PRIMARY KEY AUTO_INCREMENT,
        productos varchar(50) ,
        fecha date,
        precio int,
