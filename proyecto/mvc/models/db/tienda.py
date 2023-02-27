@@ -20,11 +20,11 @@ class Db_creador:
         )
         mycursor = mydb.cursor()
         tiendas="""
-       CREATE TABLE tiendas(
-       id_tienda integer PRIMARY KEY NOT NULL,
+      CREATE TABLE tiendas(
+       id_tienda integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
        nombre text,
        ubicacion text,
-       descipcion text   
+       descripcion text   
         );
         """
 
@@ -36,25 +36,37 @@ class Db_creador:
         host="localhost",
         user="root",
         password="",
-        database="el_ajolote_ahorrador"
+        database= "el_ajolote_ahorrador"
 
         )
         mycursor = mydb.cursor()
-        tiendas="""
-       CREATE TABLE Despensa(
-       id_despensa integer PRIMARY KEY NOT NULL,
-       productos varchar ,
+        des="""
+       CREATE TABLE despensa(
+       id_despensa integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
+       productos text,
        fecha date,
-       precio string,
-       total string   
+       precio varchar(50),
+       total varchar(50)   
         );
         """
 
-        mycursor.execute(tiendas)
-        print(mycursor)    
-  
+        mycursor.execute(des)
+        print(mycursor)
+
+    def cerrar():
+        mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="el_ajolote_ahorrador"
+
+        )    
+        mydb.commit()
+        mydb.close()
+
     tienda()
     crear_db()
     despensa()
+    cerrar()
 
 #cd proyecto/mvc/models

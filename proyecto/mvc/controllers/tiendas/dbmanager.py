@@ -5,11 +5,22 @@ class Crud_tienda:
         host="localhost",
         user="root",
         password="",
-        database="violeta"
+      database="el_ajolote_ahorrador"
         )
          mycursor = mydb.cursor()
-         sql = "INSERT INTO oficiales (nombre, apellido_paterno,apellido_materno,cargo_grado) VALUES (%s, %s,%s,%s)"
-         val = (form.nombre, form.apellido_paterno,form.apellido_materno,form.cargo)
+         #*********************************************************************************
+         #lineas para insertr con web.py
+         #sql = "INSERT INTO tiendas (nombre, ubicacion,descipcion) VALUES (%s, %s,%s,%s)"
+         #val = (form.nombre, form.apellido_paterno,form.apellido_materno,form.cargo)
+         #*******************************************************************************
+         sql = "INSERT INTO tiendas (nombre, ubicacion,descipcion) VALUES (%s, %s,%s,%s)"
+         tiendas=[
+        ("Walmartk","aqui mero","tienda azul"),
+        ("bodega ahorrera","aya mero","kilo (kl)"),
+        ("75111005566789","camaron 200 gr","kilo(kl)"),
+
+
+        ]
          mycursor.execute(sql, val)
          mydb.commit()
          mydb.close()
