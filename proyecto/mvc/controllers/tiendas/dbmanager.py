@@ -58,4 +58,7 @@ class Crud_tienda:
 
         
     delete()
-    #select()
+    select()
+    insert()
+
+
