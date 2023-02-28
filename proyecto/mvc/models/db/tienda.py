@@ -41,32 +41,21 @@ class Db_creador:
         )
         mycursor = mydb.cursor()
         des="""
-       CREATE TABLE despensa(
-       id_despensa integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
-       productos text,
+       CREATE TABLE Despensa(
+       id_despensa integer PRIMARY KEY NOT NULL,
+       productos varchar(50) ,
        fecha date,
-       precio varchar(50),
-       total varchar(50)   
+       precio int,
+       total int   
         );
         """
 
         mycursor.execute(des)
-        print(mycursor)
-
-    def cerrar():
-        mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="el_ajolote_ahorrador"
-
-        )    
-        mydb.commit()
-        mydb.close()
-
-    tienda()
-    crear_db()
+        print(mycursor)    
+  
+    #tienda()
+    #crear_db()
     despensa()
-    cerrar()
+
 
 #cd proyecto/mvc/models
