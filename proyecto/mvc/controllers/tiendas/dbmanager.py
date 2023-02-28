@@ -21,7 +21,7 @@ class Crud_tienda:
 
 
         ]
-         mycursor.execute(sql, val)
+         mycursor.execute(sql, tiendas)
          mydb.commit()
          mydb.close()
 
