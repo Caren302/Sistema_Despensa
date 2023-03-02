@@ -52,11 +52,23 @@ class Db_creador:
         """
 
         mycursor.execute(des)  
+        
+     def tabla_p():
+        mydb = mysql.connector.connect(
+          host="localhost",
+          user="root",
+          password="",
+          database="el_ajolote_ahorrador"
+        )
+        mycursor = mydb.cursor()
+
+        mycursor.execute("CREATE  TABLE productos (sku INT PRIMRY KEY, nombre_p VARCHAR(50), piezas(pz) VARCHAR(20))")
   
   
     #crear_db()
     #despensa()
     tienda()
+    #tabla_p()
 
 
 #cd proyecto/mvc/models/db
