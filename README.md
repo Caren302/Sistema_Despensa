@@ -43,7 +43,7 @@
 > En caso de que se pueda crear la DB, Descomentar y comentar las variables para resolver este problema
 ### Paso 4:
 + Regrese a la carpeta proyecto 
-+ Ejecitamos la app con :
++ Ejecuta la app con :
    `$ python3 app.py`
 + Y Listillo!!!!!!!!
 
