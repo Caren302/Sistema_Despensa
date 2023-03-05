@@ -7,7 +7,7 @@
 - Roberto Carlos Islas Islas 
 ## Requerimientos
 ### Python V.3.7 - V.3.11
-> Sitio oficial de Python,
+> Sitio oficial de Python
 [Descargar](https://www.python.org/downloads/) 
 - web.py==0.62
 - mysql-connector==2.2.9
