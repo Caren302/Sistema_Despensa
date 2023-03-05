@@ -11,7 +11,7 @@
 [Descargar](https://www.python.org/downloads/) 
 - web.py==0.62
 - mysql-connector==2.2.9
-## Instalacion manual
+### Instalacion manual
 `$ pip install web.py `
 `$ pip install mysql-connector`
 - ## Instalacion con requierements.txt
@@ -31,7 +31,7 @@
 ### Paso 2:Clonar o descargar  repositorio:
 + Crear una nueva carpeta:
 + Desde una ventana de comandos ingrese a la carpeta y ejecuta el comando :
-   `$ git clone <repository-url> `
+   `$ git clone https://github.com/Caren302/Sistema_Despensa `
 > Nota:
 > Si descargo el repositorio desde Github solo descomprima y pege en una nueva carpeta XD
 ### Paso 3: Crear Database.
