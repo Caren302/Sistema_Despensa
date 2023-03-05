@@ -11,12 +11,12 @@
 [Descargar](https://www.python.org/downloads/) 
 - web.py==0.62
 - mysql-connector==2.2.9
-- ## Instalacion manual
+## Instalacion manual
 `$ pip install web.py `
 `$ pip install mysql-connector`
 - ## Instalacion con requierements.txt
 `$ pip install -r requirements.tx`
-- ### XAMPP V.8.0.25 o posterior
+### XAMPP V.8.0.25 o posterior
 > Sitio oficial de XAMPP
 > [Descargar](https://www.apachefriends.org/es/download.html)
 
