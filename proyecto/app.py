@@ -1,6 +1,6 @@
 import web
 urls=(
-    '/.*','mvc.controllers.bienvenida.index.Index'
+    '/.*','mvc.controllers.bienvenida.login.Login'
 )
 
 
