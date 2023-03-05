@@ -1,10 +1,10 @@
 # Sistema despensa:"El Ajolotito Ahorrador"
 
 ## Colaboradores
-- Ruth Arely Cordero Barranco
-- Caren Rodrigez Santiago 
-- Saul Valderrama Velasquez
-- Roberto Carlos Islas Islas 
+- [Ruth Arely Cordero Barranco](https://github.com/RuthArely21)
+- [Caren Rodrigez Santiago](https://github.com/Caren302) 
+- [Saul Valderrama Velasquez](https://github.com/SaulVVelazquez)
+- [Roberto Carlos Islas Islas](https://github.com/Rob37toIslas) 
 ## Requerimientos
 ### Python V.3.7 - V.3.11
 > Sitio oficial de Python
