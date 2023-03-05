@@ -1,7 +1,7 @@
 # Sistema despensa:"El Ajolotito Ahorrador"
 
 ## Colaboradores
-- Ruth Arely Coredero Barranco
+- Ruth Arely Cordero Barranco
 - Caren Rodrigez Santiago 
 - Saul Valderrama Velasquez
 - Roberto Carlos Islas Islas 
