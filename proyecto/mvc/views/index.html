@@ -1,4 +1,5 @@
 $def with (index)
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,24 +18,26 @@ $def with (index)
         <h2 class="text-center tittles" style="color: #1463c4">Ajolotito</h2>
         <br>
 <h1 class="text-center tittles" style="color:red">Ahorrador</h1>
- <h3 class="menu">Binvenido $index['nombre']</h3>
+ <h3 class="menu">Bienvenido </h3>
     <div class="imach"> 
         <img src="https://img.freepik.com/iconos-gratis/ajolote_318-344461.jpg">
    </div>
     </div>
     </br>
-             
-        <h3 class="menu">Menú</h3>
+   <h3 class="menu">Menú</h3>
     <br/>
 	<div class="container-login">
-                <button type="button"class="opcion1">Mi lista</button>
-            </br>
-            <button type="button" class="opcion3">Productos&Tiendas</button>
-        </br>
-        <button type="button" class="opcion2">Historial de compras.</button>
-            </div>
-        </center>
+              <form method="POST">
+                <button type="submit" class="opcion1" name="opcion" value="despensa">Mi depensa</button>
+            <button type="submit"  class="opcion3" name='opcion' value="tienda" >Tiendas</button>
+                    <button type="submit"  class="opcion3" name='opcion' value="productos">Productos</button>
+        <button type="submit"  class="opcion2" name='opcion' value="history">Historial de compras.</button>
+             <form>
+        </div>
+
 	</div>
+     
+    </center>
   </body>
 </html>
 <style>
